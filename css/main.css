@@ -1,0 +1,132 @@
+* {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.content-1 {
+    position: relative;
+    width: 100vw; /* viewport의 전체 너비를 차지하도록 설정 */
+    overflow: hidden; /* 부모 요소를 넘어서는 부분 숨기기 */
+    display: block; /* 콘텐츠에 맞게 크기 조정 */
+}
+
+.content-2 {
+    position: relative;
+    width: 100vw; /* viewport의 전체 너비를 차지하도록 설정 */
+    overflow: hidden; /* 부모 요소를 넘어서는 부분 숨기기 */
+    display: block; /* 콘텐츠에 맞게 크기 조정 */
+}
+
+h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0;
+    padding: 195px 0 0 172px; /* padding으로 위치 조정 */
+    float: left; /* 텍스트가 왼쪽으로 떠서 이미지와 같은 줄에 배치됨 */
+}
+
+.line {
+    padding: 130px 0 0 172px; /* padding으로 위치 조정 */
+    float: left;
+}
+
+.event > a > h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    padding: 195px 0 0 172px; /* padding으로 위치 조정 */
+    text-decoration: none;
+    line-height: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.event > a > h4 { 
+    color: #9A9A9A;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    padding: 42px 0 0 172px; /* padding으로 위치 조정 */
+}
+
+.e-1 {
+    padding: 36px 0 0 172px;
+}
+
+.T1 {
+margin-left: 172px;
+padding-top: 195px;
+}
+
+.tec {
+    float: left; /* 이미지가 왼쪽으로 떠서 텍스트와 같은 줄에 배치됨 */
+    margin: -100px 0 0 20px; /* 텍스트와 이미지 사이에 여백을 추가 */
+    background: none;
+}
+
+.cm {
+    width: 1780px;
+    height: 402px;
+    float: left;
+    margin-left: 140px;
+    margin-bottom: 156px;
+    padding-top: 128px;
+    overflow: hidden;
+    display: flex; /* Flexbox를 사용하여 아이템을 나열 */
+    gap: 50px; /* 아이템들 사이에 50px의 간격을 설정 */
+    flex-wrap: wrap; /* 화면 크기에 따라 아이템들을 줄 바꿈 허용 */
+    justify-content: center; /* 아이템들을 수평 중앙 정렬 (옵션) */
+    transition: transform 0.5s ease;
+}
+
+/* 슬라이더 기본 스타일 */
+.slider {
+    position: relative;
+    width: calc(100% - 0px); /* 전체 화면 너비에서 140px만큼 줄임 */
+    overflow: hidden;
+    margin: auto;
+}
+
+/* 슬라이더 내부 컨테이너 */
+.event-slider {
+    display: flex;
+    transition: transform 6s ease; /* 슬라이드 이동 속도 조정 (3초) */
+    width: auto; /* 자동 너비로 설정 */
+    margin-bottom: 150px;
+}
+
+/* 이벤트 항목 스타일 */
+.event {
+    flex: 0 0 15%; /* 한 줄에 4개 항목을 표시하도록 설정 (100% / 4) */
+    box-sizing: border-box;
+    padding: 0; /* 항목 간의 간격 설정 (좌우 간격을 줄임) */
+    margin: 0; /* 불필요한 여백 제거 */
+}
+
+/* 필요에 따라 추가 스타일 조정 */
+.down {
+    position: relative; /* 자식 요소들을 절대 위치로 배치할 수 있도록 설정 */
+    width: 100vw; /* viewport의 전체 너비를 차지하도록 설정 */
+    overflow: hidden; /* 부모 요소를 넘어서는 부분 숨기기 */
+    display: block; /* 콘텐츠에 맞게 크기 조정 */
+}
+
+.game {
+    display: block; /* 이미지 하단의 공백 제거 */
+    width: 100%;
+    height: auto; /* 이미지 비율 유지 */
+}
+
+.bt {
+    position: absolute; /* 부모 요소를 기준으로 절대 위치 설정 */
+    top: 58%; /* 부모 요소의 수직 중앙에 위치 */
+    left: 18%; /* 부모 요소의 수평 중앙에 위치 */
+    transform: translate(-50%, -50%); /* 이미지의 정확한 중앙 위치 조정 */
+    background: none;
+}
